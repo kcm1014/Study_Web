@@ -1,0 +1,16 @@
+암시적 형변환
+숫자형 + 문자형 = 문자형
+불린형 + 문자형 = 문자형
+불리형 + 숫자형 = 숫자형
+
+명시적 형변환
+parseInt()    //let a = parseInt("1234");
+Number()      //let a = Number("1234");
+
+parseFloat()  //let a = parseFloat("1234.45");
+Number()      //let a = Number("1234.45");
+
+String()      //let a = String(1234);
+
+Number.toString() // 15.toString(16);   // 결과 : "f"
+Number.toFixed()  // 123.456.toFixed(2);  // 결과 : "123.45"

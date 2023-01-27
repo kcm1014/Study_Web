@@ -31,3 +31,5 @@ const : ES6에 도입되어 불변 상수
         }
 
 
+
+let 변수 = window.prompt("메세지");
