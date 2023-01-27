@@ -1,0 +1,16 @@
+연관있는 변수와 함수를 하나로 묶을때 사용하는 문법
+
+클래스 생김새
+function Calculator(){
+    this.add = function(a,b){
+        alert("두수의 합은" + (a+b) + "입니다" );
+    }
+
+    this.sub = function(a,b){
+        alert("두수의 차는" + (a-b) + "입니다" );
+    }
+}
+
+인스턴스와 객체
+let calculator = new Calculator();
+calculator.add(10,20);
