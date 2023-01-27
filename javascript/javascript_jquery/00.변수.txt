@@ -1,0 +1,33 @@
+var  : 이전 방식 가장 큰 차이점은 var 선언되면 지역 변수 개념이 사라진다.(현재 하위 호환을 위해 남겨둠)
+let  : ES6에 도입되어 다른 프로그램의 일반 변수 선언과 같다
+const : ES6에 도입되어 불변 상수  
+
+변수는 camelcase 형태로 작성하는것을 추천한다.
+숫자로 시작불가능하고,
+
+변수의 종류
+    Number
+    Boolean
+    String
+
+    Function
+    Class
+    Class Instance
+
+    undefined
+    null
+
+    let 변수이름=[데이터[,...]]
+    let userName = ["철수", "영희", "선희", "영자","병철"];
+
+    전역변수
+    지역변수
+        window.onload = function(){
+            let global2 = "지역변수1";
+        }
+
+        function func1(){
+            let local1 = "지역변수2";
+        }
+
+
