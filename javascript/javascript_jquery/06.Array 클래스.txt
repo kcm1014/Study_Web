@@ -1,0 +1,18 @@
+length
+
+cooncat()
+indexOf()
+join()
+pop()  //마지막 배열 요소 반환
+push()
+reverse()
+shift()   // 배열에서 첫번째 요소를 제거한 후 배열 반환
+slice()
+sort()
+splice()     //배열 요소를 추가, 삭제, 교체
+unshift()    //배열 맨 앞에 배열 요소 삽입
+
+
+배열.sort(function(a,b){
+    return a - b;
+});

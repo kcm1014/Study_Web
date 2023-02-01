@@ -34,3 +34,6 @@ const : ES6에 도입되어 불변 상수
     멤버변수(프로퍼티)
 
 let 변수 = window.prompt("메세지");
+
+var $a; //jquery 객체를 담는 변수 , jquery에서 사용하는 내장함수를 모두 사용 할 수 있다. .css(), .hide(), .show() 등..
+var a;  // 일반 javascript 변수,는 jquery 에서 사용하는 내장함수 사용할 수 없음.

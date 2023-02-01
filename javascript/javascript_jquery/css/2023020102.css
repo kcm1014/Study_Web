@@ -1,0 +1,46 @@
+.tab-menu{
+    list-style: none;  /* 블릿 , 기호, 점 없애기*/
+    height: 80px;
+}
+
+.tab-menu li {
+    width: 99px;
+    height: 40px;
+    background-position-y: 0; /* 배경 이미지의 y 속성*/
+    text-indent: -1000px;     /*양수면 들영쓰기, 음수면 내어쓰기*/
+    overflow: hidden;
+    display: inline-block;     /*외부적으로는 inline 내부적으로 block */
+}
+
+.tab-menu li:hover{   /*마우스를 올렸을 때ㅐ...*/
+    background-position-y:-40px;
+}
+
+.tab-menu li.select {
+    background-position-y:-80px;
+    height: 80px;
+}
+
+.tab-menu li.menuitem1{
+    background-image: url(../banners/newbtn.bar.1.png);
+}
+
+.tab-menu li.menuitem2{
+    background-image: url(../banners/newbtn.bar.2.png);
+}
+
+.tab-menu li.menuitem3{
+    background-image: url(../banners/newbtn.bar.3.png);
+}
+
+.tab-menu li.menuitem4{
+    background-image: url(../banners/newbtn.bar.4.png);
+}
+
+.tab-menu li.menuitem5{
+    background-image: url(../banners/newbtn.bar.5.png);
+}
+
+.tab-menu li.menuitem6{
+    background-image: url(../banners/newbtn.bar.6.png);
+}

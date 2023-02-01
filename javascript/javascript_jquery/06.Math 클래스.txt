@@ -1,0 +1,20 @@
+PI
+abs()
+acos()
+asin()
+atan()
+atan2()
+ceil()   //올림값
+cos()
+floor()  // 내림값
+log()    // 자연로그
+max()
+min()
+random()   //0과 1사이 난수 
+round()    //반올림, 반내림
+sin()
+sqrt()
+tan()
+
+var value = parseInt(Math.random() * 10);
+var value = Math.min(minValue, userValue)
