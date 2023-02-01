@@ -1,0 +1,7 @@
+
+
+float : 웹 요소를 문서 위에 떠 있게 만든다. 요소를 왼쪽 구석이나 오른쪽 구석에 배치된다는 의미이다. 
+    속성 : left, right, none
+
+clear :  float 속성을 해제하지 않는 경우 다음 요소에도 같은 float 속성이 적용된다. float 속성을 해제
+    속성 : left, right, both
