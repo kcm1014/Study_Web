@@ -1,0 +1,8 @@
+출력
+document.write("hello","sst")
+console.log("hello","sst")
+alert("hell")
+
+
+입력
+let input = prompt("입력");

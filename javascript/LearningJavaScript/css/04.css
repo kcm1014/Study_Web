@@ -1,5 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+
+body {
+    font-size: 20px;
+}
+
 h1 {
-    padding: 10px;
-    background-color: #222;
-    color:#fff;
+    font-family: 'Nanum Pen Script';
+    font-size: 3rem;
+    color: brown;
+}
+
+.accent {
+    font-size: 150%;
+    font-weight: 800;
+    color: rgba(0, 255, 128, 0.315);
+}
+.italic{
+    font-style: italic;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 rgb(0, 0, 0);
+}
+
+table{
+    caption-side: bottom;
+    border: 1px solid black;
+    border-collapse: collapse;
 }
