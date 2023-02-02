@@ -1,0 +1,23 @@
+2차원 변형 함수
+- translate(tx,ty)
+- translateX(tx)
+- translateY(ty)
+- scale(sx,sy)
+- scaleX(sx)
+- scaleY(sy)
+- rotate(각도)
+- skew(ax,ay)                   //지정한 각도만큼 x축과 y축으로 왜곡한다.
+- skewX(ax)
+- skewY(ay)
+
+3차원 변형 함수
+- translate3d(tx,ty,tz)
+- translateZ(tz)
+- scale3d(sx, sy, sz)
+- scaleZ(sz)
+- rotate(rx, ry, 각도)
+- rotate3d(rx, ry, rz, 각도)
+- rotateX(각도)
+- rotateY(각도)
+- rotateZ(각도)
+- perspective(길이)         // 입체적으로 보일 수 있도록 깊잇값을 지정. // 없을 경우 2입체적으로 안보일 수 있음.

@@ -1,0 +1,22 @@
+웹 요소의 배갱색을 바꾸거나 도형의 테두리를 사각형에서 원형으로 바꾸는 것처럼 스타일 속성이 바뀌는 것을 말한다.
+
+transition-property                     // 대상 지정
+transition-duration                     // 실행 시간
+transition-timing-function              // 실행 형태 지정
+transition-delay                        // 지연 시간을 지정
+transition                              // 대상, 시간, 형태, 지연 시간을 한번에 지정
+
+
+transition-property
+    all       : 모든 속성이 변경 대상이다.
+    none      : 아무 속성도 변경되지 않는다.
+    속성 이름 : 속성 만 변경 대상이된다. 여러개일 경우 쉼표(,)로 구분하여 나열
+
+
+transition-timing-function 
+    ease       : 천천히 -> 빨라지다 -> 친천이 마무리
+    linear     : 같은 속도로 진행
+    ease-in    : 느리게 시작
+    ease-out   : 느리게 끝냄
+    ease-in-out :느리게 시작하고 느리게 끝남
+    cubic-bezier(n,n,n,n) : 베지에 함수를 정의해서 사용 , n 값은 0 ~1 숫자

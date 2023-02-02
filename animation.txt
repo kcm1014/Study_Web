@@ -1,0 +1,31 @@
+키프레임(keyframe) :  애니메이션 중간에 스타일이 바뀌는 지점
+
+키프레임은 @keyframes 속성으로 정의하고, animation 속성과 그 하위 속성을 이용해서 애니메이션 실행 시간이나 반복 여부 등을 지정한다.
+
+animation 속성
+@keyframes                 : 애니메이션이 바뀌는 지점 지정
+    from
+    to
+animation-delay            : 애니메이션 시작 시간 지정 
+animation-direction        : 애니메이션을 종료한뒤 처음부터 시작할지 , 역방향으로 진행할지 지정
+    normal      : from -> to
+    reverse     : to -> from
+    alternate   : 홀수 번째 normal, 짝수 번째 reverse
+    alternate-reverse  : 홀수 번째 reverse, 짝수 번째 normal
+animation-duration         : 애니메이션 실행 시간을 지정한다
+     초 단위
+animation-iteration-count  : 애니메이션 반복 횟수 지정
+    숫자        : 반복 횟수 
+    infinite    : 무한 반복
+animation-name             : @keyframes로 설정해 놓은 중간 상태를 지정
+animation-timing-functioon : 키프레임의 전환 형태를 지정
+    linear
+    ease
+    ease-in
+    ease-out
+    ease-in-out
+    cubic-bezier(n,n,n,n)
+animation  : 묶어서 속성 지정
+ 
+from : 시작      0%
+to   : 종료    100%

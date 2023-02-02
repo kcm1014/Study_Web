@@ -1,0 +1,15 @@
+뷰포트 : 스마트 폰 화면에서 실제 내용이 표시되는 영역
+
+뷰포트 지정
+<head></head> 사이에 지정
+<meta name="viewport" content="속성1=값,속성2=값, ...">
+    width   : 뷰포트 너비 - (device-width or 크기)
+    heigh   : 뷰포트 높이 - (device-height or 크기)
+    user-scale : 확대 축소 가능 여부 기본값 : yes
+    initial-scale  : 초기 확대 값 : 1
+
+뷰포트 단위
+    vw: 1vw는 뷰포트 너비의 1%
+    vh: 1vh는 뷰포트 높이의 1%
+    vmin: 뷰포트 너비 또는 높이 중 작은 값의 1%
+    vmax: 뷰포트 너비 또는 높이 중 큰 값의 1%
