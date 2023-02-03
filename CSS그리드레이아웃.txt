@@ -1,0 +1,101 @@
+가로 방향을 가리키는 줄(row)과 세로 방향을  가리키는 컬럼(column)으로 웹 화면 구성
+
+그리드 컨테이너를 지정하는 display 속성
+    gird : 컨테이너 안의 항목을 블록 레벨 요소로 배치
+    inline-grid :  컨테이너 안의 항목을 인라인 레벨 요소로 배치
+
+칼럼과 줄을 지정하는  gird-template-columns, gird-template-roows
+    gird-template-columns : 컬럼이 너비를 얼마로 할지를 각각 설정한다.
+    gird-template-row : 줄 높이를 얼마로 할지를 각각 설정한다.
+
+
+#wrapper{
+    display : grid;
+    gird-template-columns : 200px 200px 200px;  /* 너비가 200px인 컬럼 4개*/
+    gird-template-rows: 100px;                 /* 줄높이 100px* 한줄 여러줄일 경우 각각 설정 필요/
+}
+
+
+상대적인 크기를 지정하는 fr단위
+상대적인 크기를 지정할 수 있도록 fr(fraction) 단위를 사용한다.
+gird-template-rows 에는 적용이 안되는 듯하다.
+
+다음은 전체 화면을 3등분 후 1 : 1 : 1 로 너비를 설정
+gird-template-columns: 1fr 1fr 1fr;
+다음은 전체화면을 5등분 후 2 : 1 : 2 로 너비를 설정
+gird-template-columns: 2fr 1fr 2fr;
+
+
+값이 반복될 때 줄여서 표현할 수 있는 repeat() 함수
+grid-template-column : 1fr 1fr 1fr ; 
+grid-template-column : repeat(3,1fr) ; repeat를 이용한 변경
+
+최솟값과 최댓값을 지정하는 minmax() 함수
+gird-template-rows : minmax(100px, auto);   /* 줄 높이는 최소 100px*/
+
+자동으로 컬럼 개수를 조절하는 auto-fill, auto-fit 값
+grid-template-columns(autoo-fit, 200px) /* 너비가 200px인 컬럼을 가득 찰때까지 배치*/
+auto-fit : 남는 공간을 없이 꽉 채워서 컬럼을 표시
+auto-fill : 최소 너비만을 표시하고 나믄 공간은 그대로 둔다.
+grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+
+그리드 항목의 간격을 지정하는 column-gap, row-grap, grid-gap 속성
+    column-gap : 컬럼과 컬럼 사이의 간경
+    row-gap    : 줄과 줄 사이의 간격을 지정
+    grid-gap        : row-gap, column-gap
+
+    값 :
+    normal : 브라아주 기본 간격 기본 1em
+    px, em, %
+
+그리드 라인을 이용해 배치
+grid-column-start
+grid-column-end
+grid-column       : 컬럼 시작 번호와 끝번호 사이에 슬래시(/)를 넣어 사
+grid-row-start
+grid-row-end
+grid-row
+
+
+줄이 3개이면 , 컬럼 시작 ,끝 번호는 4개
+gird-row: 1/4는 3개의 컬럼에 걸쳐 배치한다는 개념이다(colspan 개념)
+1 ----------------------------------------
+2 ----------------------------------------
+3 ----------------------------------------
+4 ----------------------------------------
+
+템플릿 영역을 만들어 배치한다는
+<style>
+    #wrapper{
+      width:700px;
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      grid-template-rows:repeat(3, 100px);
+      grid-template-areas:   // 줄에 들어갈 템플릿 영역을 큰따옴표("")로 묶는다.
+        "box1 box1 box1"
+        "box2 box3 box3"
+        "box2 . box4";          //점은 빈칸ㄴ
+    }
+    .box{
+      padding:15px;
+      color:#fff;
+      font-weight:bold;
+      text-align:center;
+    }   
+    .box1 {
+      background-color:#3689ff;
+      grid-area:box1;    // 영역 이름 지정
+    }
+    .box2 {
+      background-color:#00cf12;
+      grid-area:box2;    // 영역 이름 지정
+    }
+    .box3 {
+      background-color:#ff9019;
+      grid-area:box3;    // 영역 이름 지정
+      }
+    .box4 {
+      background-color:#ffd000;
+      grid-area:box4;   // 영역 이름 지정
+    }
+  </style>
