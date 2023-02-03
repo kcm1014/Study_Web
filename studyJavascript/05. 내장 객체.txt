@@ -1,0 +1,93 @@
+=================================================================================================================
+Array 클래스
+var numbers = new Array();
+var numbers = new Array(4);
+var numbers = ["one", "two", "three","four"];
+var numbers = Array("one", "two", "three","four");
+
+length
+
+concat()
+indexOf()
+join()
+pop()  //마지막 배열 요소 반환
+push() //배열 맨끝에 요소 추가
+reverse()
+shift()   // 배열에서 첫번째 요소를 제거한 후 배열 반환
+slice()
+sort()
+splice()     //배열 요소를 추가, 삭제, 교체
+unshift()    //배열 맨 앞에 배열 요소 삽입
+
+
+배열.sort(function(a,b){
+    return a - b;
+});
+=================================================================================================================
+Date 클래스
+getDate()
+getDay()
+getFullYear()
+getHours()
+getMilliseconds()
+getMinutes()
+getMonth()
+getSeconds()
+getTime()
+getYear()
+
+setDate()
+setFullYear()
+setHours()
+setMilliseconds()
+setMinutes()
+setMonth()
+setSeconds()
+setTime()
+setYear();
+
+var objDate = new Date();
+var hours = objDate.getHours();
+var minutes = objDate.getMinutes();
+var seconds = objDate.getSeconds();
+var milliseconds = objDate.getMilliseconds();
+=================================================================================================================
+Math 클래스
+PI
+abs()
+acos()
+asin()
+atan()
+atan2()
+ceil()   //올림값
+cos()
+floor()  // 내림값
+log()    // 자연로그
+max()
+min()
+random()   //0과 1사이 난수 
+round()    //반올림, 반내림
+sin()
+sqrt()
+tan()
+
+var value = parseInt(Math.random() * 10);
+var value = Math.min(minValue, userValue)
+
+=================================================================================================================
+String 클래스
+length
+charAt(n)                // n번째 문자
+charCodeAt(n)            // n번재 문자 코드값
+concat(str)              // 문자열 뒤쪽에 str 연결
+indexOf(substr)
+lastIndexOf(substr)
+match(reg)                //정규 표현식 검사
+replace(reg,rep)
+search(reg)
+slice(start, end)
+split(str)   // str로 분할해서 배열 생성
+substr(start[,count])
+toLowerCase()
+toUpperCase()
+trim()

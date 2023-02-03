@@ -9,4 +9,3 @@ var timerID = setInterval(function(){
 },1000);
 
 clearInterval(timerID);
-
