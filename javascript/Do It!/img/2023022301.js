@@ -11,3 +11,22 @@ console.log(name2);
 console.log(typeof(12));
 console.log(typeof name1);
 console.log(typeof false);
+console.log(add(1,2));
+console.log(k);
+var k = 300;
+console.log(k);
+function add(x,y){
+    k = 1000;
+    return x+y;
+}
+
+console.log(add(1,2));
+console.log(k);
+
+
+var x = 0;
+{
+  var x = 1;
+  console.log(x); // 1
+}
+console.log(x);   // 1
